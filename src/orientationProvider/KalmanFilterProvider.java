@@ -9,6 +9,10 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorManager;
 
+/**
+ * Warning: This file has not checked/compiled thoroughly
+ */
+
 
 public class KalmanFilterProvider extends OrientationProvider {
 
