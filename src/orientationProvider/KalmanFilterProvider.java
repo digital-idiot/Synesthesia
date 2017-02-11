@@ -21,8 +21,6 @@ public class KalmanFilterProvider extends OrientationProvider {
 	private Quaternion correctedQuaternion = new Quaternion();
 	public CalibratedGyroscopeProvider(SensorManager sensorManager) {
 		super(sensorManager);
-
-		//Add the gyroscope
 		sensorList.add(sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE));
 	}
 
