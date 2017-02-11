@@ -23,7 +23,7 @@ public class KalmanFilterProvider extends OrientationProvider {
 	private static final double EPSILON = 0.1f; //[Experimental value] Filter-threshold
 	private double gyroscopeRotationVelocity = 0; //Value giving the total velocity of the gyroscope
 	private Quaternion correctedQuaternion = new Quaternion();
-	public CalibratedGyroscopeProvider(SensorManager sensorManager) {
+	public KalmanFilterProvider(SensorManager sensorManager) {
 		super(sensorManager);
 		sensorList.add(sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE));
 	}
