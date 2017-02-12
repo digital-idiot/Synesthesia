@@ -12,12 +12,26 @@ public class Quaternion extends Vector4f {
 	private boolean dirty = false;
 	private Vector4f tmpVector = new Vector4f();
 	private Quaternion tmpQuaternion;
+	private float x;
+	private float y;
+	private float z;
+	private float w;
 
 	public Quaternion() {
 		super();
 		matrix = new MatrixF4x4();
 		loadIdentityQuat();
 	}
+
+	/*public Quaternion(float x,float y,float z,float w) {
+		super();
+		matrix = new MatrixF4x4();
+		this.dirty = true;
+		setX(x);
+		setY(y);
+		setZ(z);
+		setW(w);
+	}*/
 
 	/**
 	 * Normalize this Quaternion

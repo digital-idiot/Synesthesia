@@ -7,7 +7,7 @@ import representation.Quaternion;
  */
 
 
-public class Demo {
+public class DemoClient {
 	private Quaternion quaternion = new Quaternion();
 	private OrientationProvider currentOrientationProvider = new KalmanFilterProvider((SensorManager) getActivity().getSystemService(SensorSelectionActivity.SENSOR_SERVICE));
 	if (orientationProvider != null) {
